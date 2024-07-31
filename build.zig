@@ -348,8 +348,8 @@ pub fn link(
             }
         } else {
             exe.linkSystemLibrary(switch (library) {
-                .SDL2 => "sdl2",
-                .SDL2_ttf => "sdl2_ttf",
+                .SDL2 => "SDL2",
+                .SDL2_ttf => "SDL22_ttf",
             });
         }
     } else if (target.result.os.tag == .windows) {
